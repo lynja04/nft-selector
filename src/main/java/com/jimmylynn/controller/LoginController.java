@@ -8,13 +8,12 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/login")
 @RequiredArgsConstructor
-@CrossOrigin
 public class LoginController {
 
   private final LoginService loginService;
 
   @PostMapping("/")
-  public void login(@RequestBody LoginDTO loginDTO) {
-    loginService.login(loginDTO);
+  public Integer login(@RequestBody LoginDTO loginDTO) {
+    return loginService.login(loginDTO);
   }
 }

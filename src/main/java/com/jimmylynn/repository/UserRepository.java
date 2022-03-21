@@ -1,4 +1,4 @@
-package com.jimmylynn;
+package com.jimmylynn.repository;
 
 import com.jimmylynn.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
