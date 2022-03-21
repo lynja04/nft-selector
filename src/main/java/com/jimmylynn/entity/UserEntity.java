@@ -1,7 +1,6 @@
 package com.jimmylynn.entity;
 
 import com.jimmylynn.constants.KnowledgeLevel;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

@@ -1,5 +1,8 @@
 package com.jimmylynn.constants;
 
+import java.util.Arrays;
+import java.util.Optional;
+
 public enum KnowledgeLevel {
   BEGINNER("beginner"),
   INTERMEDIATE("intermediate"),
@@ -13,5 +16,11 @@ public enum KnowledgeLevel {
 
   public String getKnowledgeLevel() {
     return knowledgeLevel;
+  }
+
+  public static Optional<KnowledgeLevel> get(String knowledgeLevel) {
+    return Arrays.stream(KnowledgeLevel.values())
+        .filter(env -> env.knowledgeLevel.equals(knowledgeLevel))
+        .findFirst();
   }
 }
